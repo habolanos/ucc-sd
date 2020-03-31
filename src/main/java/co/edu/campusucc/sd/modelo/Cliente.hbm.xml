@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 16/03/2020 09:12:15 PM by Hibernate Tools 5.4.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="co.edu.campusucc.sd.modelo.Cliente" optimistic-lock="version" polymorphism="implicit" schema="public" select-before-update="false" table="cliente">
+        <id name="idCliente" type="string">
+            <column length="50" name="id_cliente"/>
+            <generator class="assigned"/>
+        </id>
+        <many-to-one class="co.edu.campusucc.sd.modelo.Pais" embed-xml="true" fetch="select" insert="true" name="pais" not-found="exception" optimistic-lock="true" unique="false" update="true">
+            <column length="3" name="id_pais"/>
+        </many-to-one>
+        <many-to-one class="co.edu.campusucc.sd.modelo.TipoCliente" embed-xml="true" fetch="select" insert="true" name="tipoCliente" not-found="exception" optimistic-lock="true" unique="false" update="true">
+            <column length="3" name="id_tipo_cliente"/>
+        </many-to-one>
+        <many-to-one class="co.edu.campusucc.sd.modelo.TipoDocumento" embed-xml="true" fetch="select" insert="true" name="tipoDocumento" not-found="exception" optimistic-lock="true" unique="false" update="true">
+            <column length="2" name="id_tipo_documento"/>
+        </many-to-one>
+        <property generated="never" lazy="false" name="nombres" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="nombres"/>
+        </property>
+        <property generated="never" lazy="false" name="apellidos" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="apellidos"/>
+        </property>
+        <property generated="never" lazy="false" name="razonSocial" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="razon_social"/>
+        </property>
+        <set embed-xml="true" fetch="select" inverse="true" lazy="true" mutable="true" name="biometrias" optimistic-lock="true" sort="unsorted" table="biometria">
+            <key on-delete="noaction">
+                <column length="50" name="id_cliente"/>
+            </key>
+            <one-to-many class="co.edu.campusucc.sd.modelo.Biometria" embed-xml="true" not-found="exception"/>
+        </set>
+    </class>
+</hibernate-mapping>

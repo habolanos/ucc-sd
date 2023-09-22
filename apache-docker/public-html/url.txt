@@ -1,0 +1,77 @@
+commit 4095ba936406c504e1bd0049e29e74fa9a581529
+Author: Externo Tinet40 <externo.tinet40@consorcio.cl>
+Date:   Thu Sep 21 18:59:03 2023 -0500
+
+    rearrange folder to app
+
+commit e8e119c70a7c7689366fec80edbc139c68256a33
+Merge: ae77f73 f493eaf
+Author: Harold Adrián Bolaños Rodríguez <habolanos@e11evenn.co>
+Date:   Thu Sep 21 18:50:54 2023 -0500
+
+    Merge pull request #4 from habolanos/dependabot/maven/org.postgresql-postgresql-42.4.1
+    
+    Bump postgresql from 42.2.11 to 42.4.1
+
+commit ae77f73f0ceb125235dc8c27ada1c0786ba06aa5
+Merge: da9dbdd 4882996
+Author: Harold Adrián Bolaños Rodríguez <habolanos@e11evenn.co>
+Date:   Thu Sep 21 18:50:19 2023 -0500
+
+    Merge pull request #2 from habolanos/dependabot/maven/org.hibernate-hibernate-core-5.4.24.Final
+    
+    Bump hibernate-core from 5.4.12.Final to 5.4.24.Final
+
+commit f493eaf2b3b11520085ff2cf029cfd6235e9b62c
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Thu Sep 8 01:06:59 2022 +0000
+
+    Bump postgresql from 42.2.11 to 42.4.1
+    
+    Bumps [postgresql](https://github.com/pgjdbc/pgjdbc) from 42.2.11 to 42.4.1.
+    - [Release notes](https://github.com/pgjdbc/pgjdbc/releases)
+    - [Changelog](https://github.com/pgjdbc/pgjdbc/blob/master/CHANGELOG.md)
+    - [Commits](https://github.com/pgjdbc/pgjdbc/compare/REL42.2.11...REL42.4.1)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: org.postgresql:postgresql
+      dependency-type: direct:production
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+commit 48829967bdd36638487a42a916bb2dbe502d279c
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Thu Feb 10 01:30:43 2022 +0000
+
+    Bump hibernate-core from 5.4.12.Final to 5.4.24.Final
+    
+    Bumps [hibernate-core](https://github.com/hibernate/hibernate-orm) from 5.4.12.Final to 5.4.24.Final.
+    - [Release notes](https://github.com/hibernate/hibernate-orm/releases)
+    - [Changelog](https://github.com/hibernate/hibernate-orm/blob/5.4.24/changelog.txt)
+    - [Commits](https://github.com/hibernate/hibernate-orm/compare/5.4.12...5.4.24)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: org.hibernate:hibernate-core
+      dependency-type: direct:production
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+commit da9dbdd51ac9597eb12fa9068240ae93e4a6e8ef
+Author: Harold Adrián Bolaños Rodríguez <habolanos@e11evenn.com>
+Date:   Mon Mar 30 21:21:57 2020 -0500
+
+    Primer montaje de codigo, con validacion Junit
+    
+    Implementacion de pruebas unitarias
+    Actualizacion de los DAOS
+    configuracion de conexion
+
+commit 18aa1f0d9390661d62653d056299d8f789d12499
+Author: Harold Adrián Bolaños Rodríguez <habolanos@e11evenn.com>
+Date:   Mon Mar 9 19:06:40 2020 -0500
+
+    Initial commit

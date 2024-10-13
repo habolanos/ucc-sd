@@ -14,6 +14,7 @@ public class RandomQueryApp {
     private static final String PASS = "postgres";
 
     public static void main(String[] args) {
+        System.out.println("Cliente Java by Harold Adrian");
         try {
             Connection connection = DriverManager.getConnection(DB_URL, USER, PASS);
             Statement statement = connection.createStatement();

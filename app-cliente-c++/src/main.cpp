@@ -6,6 +6,8 @@
 #include <ctime>
 
 int main() {
+    std::cout << "Cliente C++ by Harold Adrian" << std::endl;
+
     const std::string db_url = "postgresql://postgres:postgres@localhost:5432/postgres";
     std::srand(std::time(0));
 

@@ -1,0 +1,1 @@
+docker build -t habolanos/ejercicio-docker-01:latest .

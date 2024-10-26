@@ -9,8 +9,7 @@ RUN apk update && \
     cmake -DCMAKE_INSTALL_PREFIX=/usr . && \
     make && make install && \
     cd .. && rm -rf libpqxx-7.6.0 && \
-    apk del postgresql-dev curl && \
-    apk add libpq
+    apk del curl
 
 # Copiar el código fuente de la aplicación
 COPY src/main.cpp /app

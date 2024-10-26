@@ -1,0 +1,1 @@
+docker run --rm habolanos/app-cliente-python

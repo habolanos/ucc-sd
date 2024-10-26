@@ -14,7 +14,7 @@ public class RandomQueryApp {
     private static final String PASS = "postgres";
 
     public static void main(String[] args) {
-        System.out.println("Cliente Java by Harold Adrian");
+        System.out.println("Cliente Java 🍵 by Sebastian Espinosa B. 😎");
         try {
             Connection connection = DriverManager.getConnection(DB_URL, USER, PASS);
             Statement statement = connection.createStatement();
@@ -28,7 +28,7 @@ public class RandomQueryApp {
                 ResultSet resultSet = statement.executeQuery(query);
 
                 while (resultSet.next()) {
-                    System.out.println("Java Resultado: " + resultSet.getString("id") + " " +resultSet.getString("name"));
+                    System.out.println("Java Resultado: " + resultSet.getString("id") + " " + resultSet.getString("name"));
                 }
             }
         } catch (Exception e) {

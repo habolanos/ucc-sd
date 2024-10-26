@@ -1,0 +1,1 @@
+docker run --name postgres-ppal --network challenge-postgres -e POSTGRES_HOST_AUTH_METHOD=md5 -p 5432:5432 -d postgres

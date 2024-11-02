@@ -1,1 +1,2 @@
-docker run -i --rm postgres cat /usr/share/postgresql/postgresql.conf.sample > slave01-postgres.conf
+docker run -i --network challenge-postgres \
+    -v "$PWD/slave-1-initdb":/docker-entrypoint-initdb.d -d postgres

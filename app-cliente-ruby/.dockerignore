@@ -1,0 +1,17 @@
+# Ignorar archivos de sistema
+.DS_Store
+*.log
+
+# Ignorar archivos de configuración de editor
+.vscode/
+.idea/
+
+# Ignorar dependencias de Ruby
+*.gem
+vendor/
+
+# Ignorar archivos temporales
+tmp/
+cache/
+
+*.sh

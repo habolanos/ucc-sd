@@ -1,0 +1,26 @@
+  services:
+    # Name of the Docker Compose service
+    oracle:
+      container_name: oracle-db
+      # Docker Hub image (feel free to change the tag "latest" to any other available one)
+      image: gvenzl/oracle-free:slim
+      # Forward Oracle port to localhost
+      ports:
+        - "1521:1521"
+      # Provide passwords and other environment variables to the container
+      environment:
+        ORACLE_PASSWORD: oracle
+        APP_USER: banco_user
+        APP_USER_PASSWORD: oracle
+        ORACLE_DATABASE: orcl,agency
+      # Customize healthcheck script options for startup
+      healthcheck:
+        test: ["CMD", "healthcheck.sh"]
+        interval: 10s
+        timeout: 5s
+        retries: 10
+        start_period: 5s
+        start_interval: 5s
+      # Mount a local SQL file to initialize your schema at startup
+      volumes:
+        - ./initdb:/container-entrypoint-initdb.d:ro

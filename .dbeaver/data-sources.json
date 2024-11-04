@@ -19,7 +19,8 @@
 					"@dbeaver-sid-service@": "SERVICE"
 				},
 				"auth-model": "oracle_native"
-			}
+			},
+			"filters": []
 		},
 		"postgres-jdbc-192d0012b35-10a727a67355fae9": {
 			"provider": "postgresql",

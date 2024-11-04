@@ -1,7 +1,7 @@
 services:
   postgres-ppal:
     container_name: postgres-ppal
-    image: postgres:latest
+    image: postgres:alpine3.20
     restart: always
     # set shared memory limit when using docker-compose
     shm_size: 128mb
